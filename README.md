@@ -1,17 +1,40 @@
-# React + Vite
+# 🚀 Hoods Dex: Fast, Efficient, Open Exchange
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Network: Robinhood Testnet](https://img.shields.io/badge/Network-Robinhood_Testnet-CCFF00.svg)](https://docs.robinhood.com/)
+[![React](https://img.shields.io/badge/Frontend-React_18-61DAFB?logo=react)](https://reactjs.org/)
+[![Ethers](https://img.shields.io/badge/Library-Ethers.js_v6-3C3C3D?logo=ethereum)](https://docs.ethers.org/v6/)
 
-Currently, two official plugins are available:
+**Hoods Dex** is a professional-grade Automated Market Maker (AMM) built on the Robinhood Chain. It enables seamless, decentralized trading of tokenized stock assets with a sleek, fintech-inspired interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **AMM Swaps:** Trade Stock Tokens using the $x \cdot y = k$ constant product formula.
+* **Integrated Routing:** Perform Stock-to-Stock trades (e.g., AMD to TSLA) in a single transaction via an ETH bridge.
+* **Auto-Approve Logic:** A seamless UX that handles ERC20 allowances automatically before swapping.
+* **Emergency Safety:** Built-in `emergencyWithdraw` functions to ensure liquidity can be recovered by the owner.
+* **Dual Theme:** Dark and Light mode support inspired by Robinhood’s official documentation.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Hood-Dex
+## 🛠 Tech Stack
+
+* **Smart Contracts:** Solidity v0.8.20+.
+* **Frontend:** React.js, Vite, Tailwind CSS.
+* **Web3 Library:** Ethers.js v6.
+* **Icons/UI:** React-Select, Lucide-React.
+
+---
+
+## 🏗 Repository Structure
+
+```text
+├── contracts/          # Solidity smart contracts (EVRTSwap.sol)
+├── src/                # React frontend source code
+│   ├── assets/         # Images, icons, and logos
+│   ├── App.jsx         # Main application logic & UI
+│   ├── App.css         # Custom Robinhood-themed styling
+│   └── main.jsx        # React entry point
+└── tailwind.config.js  # Styling configuration
